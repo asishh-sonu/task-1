@@ -1,2 +1,2 @@
-# task-1
-To do list web app using HTML, CSS and JS
+# To-Do-List
+A To-Do List Webapp using HTML, CSS and JS

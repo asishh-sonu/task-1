@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background: linear-gradient(to right, #464421, #334b18, rgb(79, 91, 167), rgb(28, 17, 39));
+    color: #fff;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.app {
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    border-radius: 1rem;
+}
+
+.app header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.app header h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.app header button {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #8a3a91, #4b1846);
+    opacity: 0.8;
+    transition: 0.5s;
+    box-shadow:  0 0 5px rgb(171, 167, 167);
+}
+.app header button:hover {
+    opacity: 1;
+}
+.app header button:active {
+    opacity: 0.6;
+    padding: 0.8rem;
+    box-shadow: none;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #323235;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 1rem;
+    width: 20px;
+    height: 30px;
+}
+
+.item input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    flex: 1 1 0%;
+}
+
+.item input[type="text"]:not(:disabled) {
+    border-bottom: 2px solid #fff;
+}
+
+.item.complete {
+    opacity: 0.7;
+}
+
+.item.complete input[type="text"] {
+    text-decoration: line-through;
+}
+
+.item:hover, .item:focus-within {
+    outline: 2px solid #fff;
+}
+
+.actions button {
+    color: #ccc;
+    margin-right: 1rem;
+    opacity: 0.8;
+    transform: 0.1s;
+}
+
+.actions button.remove-btn {
+    color: crimson;
+}
+
+.actions button:hover {
+    opacity: 2;
+}
+
+.actions button:last-of-type {
+    margin-right: 0;
+}
